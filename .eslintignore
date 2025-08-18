@@ -1,0 +1,8 @@
+configs/**
+node_modules/**/*
+analysis/**/*
+allure-results/**/*
+playwright-report/**/*
+test-results/**/*
+.eslintrc.js
+**/*.css

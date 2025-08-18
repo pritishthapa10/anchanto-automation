@@ -1,0 +1,39 @@
+{
+  "name": "anchantoboilerplateproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint ./ --fix",
+    "prettier": "npx prettier --write",
+    "test": "echo %NODE_ENV% && npx playwright test",
+    "test:local": "cross-env NODE_ENV='local' npm run test",
+    "test:dev": "cross-env NODE_ENV='dev' npm run test",
+    "test:qa": "cross-env NODE_ENV='qa' npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "allure-playwright": "^3.3.3",
+    "dotenv": "^17.2.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "csv-parse": "^5.6.0",
+    "xlsx": "^0.18.5"
+  }
+}
