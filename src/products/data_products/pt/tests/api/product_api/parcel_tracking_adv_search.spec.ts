@@ -2,7 +2,7 @@
 const { test, expect, request } = require('@playwright/test');
  
 // Import the login helper to dynamically retrieve the access token
-const { getAccessToken } = require('../../authhelper');
+const { getAccessToken } = require('../../../../../../../utils/helpers/data_products/pt/api/login');
 
 
  
