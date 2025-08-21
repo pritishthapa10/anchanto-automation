@@ -1,0 +1,5 @@
+[33m05515dd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbranch1[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #1 from pritishthapa10/branch1
+[33mee44cf5[m[33m ([m[1;31morigin/branch1[m[33m)[m fixed the path: Import the login helper to dynamically retrieve the access token
+[33md9a0901[m Delete allure-reports directory
+[33m0c06ec8[m master: Added new files.
+[33m795ab70[m[33m ([m[1;32mmaster[m[33m)[m master: The boiler plate for the anchanto automation.
