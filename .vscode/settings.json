@@ -1,0 +1,16 @@
+{
+  "gitlens.codeLens.enabled": true,
+  "gitlens.codeLens.recentChanges.enabled": true,
+  "gitlens.codeLens.authors.enabled": true,
+  "gitlens.hovers.enabled": true,
+  "gitlens.hovers.detailsMarkdownFormat": "both",
+  "gitlens.hovers.avatars": true,
+  "gitlens.blame.format": "${author}, ${agoOrDate}",
+  "gitlens.blame.compact": false,
+  "gitlens.blame.avatars": true,
+  "gitlens.blame.heatmap.enabled": true,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.currentLine.format": "${author} • ${agoOrDate}",
+  "gitlens.statusBar.enabled": true,
+  "gitlens.statusBar.format": "${author}, ${agoOrDate}"
+}
