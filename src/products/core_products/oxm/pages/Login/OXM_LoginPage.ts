@@ -2,6 +2,7 @@ import { Page } from "@playwright/test";
 import * as dotenv from 'dotenv';
 dotenv.config();
 
+//This class contains all the methods and locators for OXM Login page
 export class OXM_LoginPage
 {
     private OXM_LoginButton;
