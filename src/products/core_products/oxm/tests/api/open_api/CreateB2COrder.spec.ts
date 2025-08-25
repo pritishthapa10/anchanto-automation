@@ -98,7 +98,7 @@ test('Create B2C Order via API', async ({page}) => {
     const CommonAPIUtils_obj = new CommonAPIUtils(
             process.env.OXM_API_BASE_URL,
             APIaccessToken,
-            '/external-api/v1/orders/b2c');
+            '/external-api/v1/orders/create/b2c');
                       
     //Step 2: Call Get Order by ID API
     const GetOrderResponse = await CommonAPIUtils_obj.ExecutePostRequest(requestBody);
@@ -107,7 +107,7 @@ test('Create B2C Order via API', async ({page}) => {
     expect.soft(GetOrderResponse.status(), 'Expected status code 201').toBe(201);
     
     //Validate the message in the response
-    // const responseBody = await GetOrderResponse.json();
-    // expect.soft(responseBody.message).toBe('B2C Order created successfully.');
+    const responseBody = await GetOrderResponse.json();
+    expect.soft(responseBody.message).toBe('B2C Order created successfully.');
   
 });
