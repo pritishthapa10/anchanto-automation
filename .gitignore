@@ -9,3 +9,5 @@ allure-reports
 allure-results
 html-report
 test-results
+/configs/env/**/*.env
+/configs/*.env
