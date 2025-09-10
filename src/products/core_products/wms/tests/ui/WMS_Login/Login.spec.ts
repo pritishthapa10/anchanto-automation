@@ -9,8 +9,11 @@ test('Login WMS', async ({page})=>{
 
     //Login in to OMS
     const Login  = new LoginPageWMS(page);
-    await Login.navigate();
-    console.log("EmailID"+process.env.EMAIL);
+    //await page.goto('/');
+    //console.log(process.env.BASE_URL);
+    await page.goto("Base : "+'/');
+    //await Login.navigate();
+    console.log("EmailID "+process.env.EMAIL);
     await Login.enterCredentials(process.env.EMAIL, process.env.PASSWORD);
     await Login.submit();
 });

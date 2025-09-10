@@ -16,7 +16,7 @@ dotenv.config({ path: path.resolve(__dirname, 'configs/env/common.env') });
 
 
 // Load .env file based on NODE_ENV
-// console.log(`process.env.NODE_ENV: ${process.env.NODE_ENV}`)
+console.log(`process.env.TEST_DIR: ${process.env.TEST_DIR}`)
 
 switch (process.env.NODE_ENV) {
   case "prod":
@@ -34,13 +34,15 @@ switch (process.env.NODE_ENV) {
 }
 
 export default defineConfig({
-  testDir: "./src",
+  // testDir: "./src",
+  testDir: `${process.env.TEST_DIR}`, 
+
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 3 : 3,
+  retries: process.env.CI ? 3 : 1,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -52,7 +54,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
-
+     baseURL: process.env.BASE_URL,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
   },
