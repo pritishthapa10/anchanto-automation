@@ -13,10 +13,10 @@ test('Parcel Tracking Module - Advanced Search + Flow Test', async ({ page }) =>
   // await uiPage.searchTrackingId('test;996015450000025253;996015450000025253;996015450000025263;996015450000025263;996015450000025266;996015450000025266;996015450000025269;996015450000025269');
   
   const trackingPage = new Tracking(page);
-  await trackingPage.searchTrackingId('test;');
+  await trackingPage.searchTrackingId('376868128736');
 
   // Open and Validate Tracking Details
-  await trackingPage.openTrackingDetails('UX064213771FR');
+  await trackingPage.openTrackingDetails('376868128736');
  
   // Navigate through tabs
   await trackingPage.navigateTabs();
